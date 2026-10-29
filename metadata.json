@@ -1,0 +1,6 @@
+{
+  "name": "Student Alarm",
+  "description": "Smart alarm and reminder app designed especially for students with voice notes, subject categorization, and study schedule alerts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
