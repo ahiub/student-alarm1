@@ -1,0 +1,18 @@
+# Hand-written baseline profile: tells Android to pre-compile the startup path
+# (splash -> MainActivity -> theme -> Home screen) when the app is installed.
+# Wildcards: ** matches any package/class/method.
+HSPLcom/example/MainActivity;->**(**)**
+HSPLcom/example/MainActivityKt;->**(**)**
+HSPLcom/example/StudentAlarmApplication;->**(**)**
+HSPLcom/example/ui/AlarmViewModel;->**(**)**
+HSPLcom/example/ui/theme/**;->**(**)**
+HSPLcom/example/ui/screens/HomeScreenKt;->**(**)**
+HSPLcom/example/ui/components/GreetingHeaderKt;->**(**)**
+HSPLcom/example/ui/components/HeroAlarmCardKt;->**(**)**
+HSPLcom/example/ui/components/AlarmItemCardKt;->**(**)**
+HSPLcom/example/data/preferences/**;->**(**)**
+HSPLcom/example/data/local/**;->**(**)**
+HSPLcom/example/alarm/AlarmScheduler;->**(**)**
+Lcom/example/MainActivity;
+Lcom/example/StudentAlarmApplication;
+Lcom/example/ui/AlarmViewModel;
