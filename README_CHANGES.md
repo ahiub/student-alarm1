@@ -28,3 +28,9 @@
 ## Not changed
 - There is no blur effect in the Glass theme (it is already a gradient), so nothing to optimise there.
 - Not compiled/tested here (no Gradle in this environment). Build in Android Studio and send any error.
+
+## Stopwatch (new)
+- New bottom-bar tab "Stopwatch" (all modes): Start / Pause, Lap, Reset, lap list with best (green) and worst (red) lap.
+- `ui/StopwatchViewModel.kt`: uses SystemClock.elapsedRealtime(), so it stays exact when you switch tabs or lock the screen.
+- `ui/screens/StopwatchScreen.kt`: keeps the screen on while running; only created when the tab is opened.
+- `MainActivity.kt`: `Screen.Stopwatch`, the tab, and the screen branch.
